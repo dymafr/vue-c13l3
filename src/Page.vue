@@ -1,5 +1,6 @@
 <template>
-  <div class="p-20 m-20">
+  <div class="p-20 m-20 container">
+    <h3>PAGE</h3>
     <Modal />
   </div>
 </template>
@@ -9,5 +10,7 @@ import Modal from './Modal.vue';
 </script>
 
 <style lang="scss">
-@import './assets/scss/base.scss';
+.container {
+  position: relative;
+}
 </style>
