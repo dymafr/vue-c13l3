@@ -1,7 +1,9 @@
-<template></template>
+<template>
+  <Modal />
+</template>
 
 <script setup lang="ts">
-import { ref, type Component as C } from 'vue';
+import Modal from './Modal.vue';
 </script>
 
 <style lang="scss">

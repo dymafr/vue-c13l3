@@ -2,14 +2,21 @@
   <button @click="open = true" class="btn btn-primary">
     Confirmer l'achat
   </button>
-  <div v-if="open" class="calc">
-    <div class="modal-container">
+  <div
+    v-if="open"
+    @click="open = false"
+    class="calc d-flex flex-row justify-content-center align-items-center"
+  >
+    <div @click.stop class="modal-container">
       <h3>Confirmation de votre commande</h3>
       <ul>
         <li>Du contenu</li>
         <li>Du contenu</li>
         <li>Du contenu</li>
       </ul>
+      <button @click.stop="open = false" class="btn btn-danger">
+        Confirmer la commande
+      </button>
     </div>
   </div>
 </template>
@@ -21,5 +28,18 @@ const open = ref(false);
 </script>
 
 <style lang="scss">
-@import './assets/scss/base.scss';
+.calc {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #00000067;
+}
+
+.modal-container {
+  background-color: white;
+  border-radius: var(--border-radius);
+  border: var(--border);
+  padding: 30px;
+}
 </style>
