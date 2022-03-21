@@ -1,9 +1,11 @@
 <template>
-  <Page />
+  <div class="p-20 m-20">
+    <Modal />
+  </div>
 </template>
 
 <script setup lang="ts">
-import Page from './Page.vue';
+import Modal from './Modal.vue';
 </script>
 
 <style lang="scss">
