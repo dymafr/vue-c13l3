@@ -2,7 +2,7 @@
   <button @click="open = true" class="btn btn-primary">
     Confirmer l'achat
   </button>
-  <Teleport to="#app">
+  <Teleport to="body">
     <div
       v-if="open"
       @click="open = false"
@@ -35,7 +35,8 @@ const open = ref(false);
   top: 0;
   width: 100%;
   height: 100vh;
-  background-color: #00000067;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
 }
 
 .modal-container {

@@ -1,5 +1,5 @@
 <template>
-  <div class="p-20 m-20 container">
+  <div class="p-20 container">
     <h3>PAGE</h3>
     <Modal />
   </div>
